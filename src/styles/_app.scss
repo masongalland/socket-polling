@@ -1,0 +1,361 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  background-color: $bgColor;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+h2 {
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+header {
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-count {
+  display: flex;
+  align-items: center;
+
+  i {
+    margin-left: 5px;
+  }
+}
+
+#audience,
+#speaker {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.home {
+  margin-top: 140px;
+}
+
+.submit-btn {
+  width: 76%;
+  font-size: 20px;
+  padding: 12px 0;
+  color: white;
+  background-color: #3f3f3f;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 0;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  height: 114px;
+  margin-top: 14px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#speaker-join-form {
+  height: auto;
+  justify-content: flex-start;
+}
+
+#speaker-title-input {
+  margin: 10px 0 20px 0;
+}
+
+.welcome {
+  margin: 140px 0 20px 0;
+  font-size: 40px;
+}
+
+.form-control {
+  width: 76%;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.join-wrapper {
+  display: flex;
+}
+
+#start-presentation {
+  color: white;
+  position: fixed;
+  bottom: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+#currentQuestion {
+  margin-top: 35px;
+  padding: 10px;
+}
+
+.choice {
+  width: 90%;
+  padding: 15px;
+  margin: 10px auto;
+  box-shadow: $shadow;
+  text-align: start;
+}
+
+.asked-question {
+  margin-bottom: 25px;
+}
+
+#speaker {
+  padding: 15px;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+
+#questions {
+  div {
+    text-align: left;
+    margin: 0 auto 10px auto;
+    display: flex;
+    width: 90%;
+
+    span:first-child {
+      margin-right: 5px;
+    }
+    padding: 10px;
+    box-shadow: $shadow;
+    background-color: $sc1;
+  }
+
+  margin-bottom: 40px;
+}
+
+#scoreboard {
+  h2 {
+    margin-bottom: 15px;
+  }
+  margin-bottom: 40px
+}
+
+#attendance-tbl {
+  width: 90%;
+  margin: auto;
+  box-shadow: $shadow;
+
+  td,
+  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) {
+    background-color: $sc1;
+  }
+
+  tr:nth-child(odd) {
+    background-color:rgba(65, 85, 174, 0.37);
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: $sc4;
+    color: white;
+  }
+}

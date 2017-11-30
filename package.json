@@ -1,0 +1,38 @@
+{
+  "name": "lynda-polling",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.7.1",
+    "express": "^4.16.2",
+    "font-awesome": "^4.7.0",
+    "jQuery": "^1.7.4",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.1.0",
+    "react-bootstrap": "^0.31.5",
+    "react-chartjs-2": "^2.6.4",
+    "react-dom": "^16.1.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3005"
+}

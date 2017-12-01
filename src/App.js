@@ -30,7 +30,7 @@ class App extends Component {
     this.updateResults = this.updateResults.bind(this)
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.socket = io("/");
     this.socket.on("connect", this.connect)
     this.socket.on("disconnect", this.disconnect)
